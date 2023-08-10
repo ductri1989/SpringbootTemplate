@@ -5,9 +5,13 @@ import richard.backend.restapi.MyRespone;
 
 public class Service001_AAA extends BaseService{
 
+	
+	public String aaaa;
+	public int bbb;
+	
 	@Override
 	protected MyRespone respone() {
-		return new MyRespone(MyRespone.STATUS_Success);
+		return new MyRespone(MyRespone.STATUS_Success,"12123213213");
 	}
 
 }

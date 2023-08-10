@@ -15,9 +15,16 @@ import richard.backend.restapi.MyRespone;
 @RequestMapping(path = "/api")
 public class ControllerF {
 
-	@ApiOperation("Đăng nhập Device")
+	@ApiOperation("Đây là title hiển thị trên Swagger")
 	@PostMapping(value = "aaaa", produces = MediaType.APPLICATION_JSON_VALUE)
 	public MyRespone login(@Valid @RequestBody Service001_AAA service) {
+		return service.respone();
+	}
+	
+	
+	@ApiOperation("Đây là title hiển thị trên Swagger")
+	@PostMapping(value = "bbb", produces = MediaType.APPLICATION_JSON_VALUE)
+	public MyRespone login(@Valid @RequestBody Service_Login service) {
 		return service.respone();
 	}
 	
