@@ -16,8 +16,6 @@ public class RichardTemplateApplication {
 		System.out.println("***********************************************************->"+ip);
 		System.out.println("Your API :	http://localhost:"+PORT_SERVER+"/swagger-ui.html");
 		System.out.println("Your API :	http://"+ip+":" + PORT_SERVER + "/swagger-ui.html");
-		System.out.println("Your login page :	http://"+ip+":" + PORT_SERVER + "/login");
-		System.out.println("Your register page :	http://"+ip+":" + PORT_SERVER + "/register");
 		System.out.println("***********************************************************");
 	}
 	

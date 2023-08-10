@@ -9,7 +9,7 @@ import richard.backend.restapi.dto.DTO_AAA;
 
 public class Service_Login extends BaseService {
 	public String username;
-	public String password;
+	public transient String password;
 	public int countryCode;
 	
 	
