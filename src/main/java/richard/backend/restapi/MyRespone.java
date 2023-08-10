@@ -1,7 +1,5 @@
 package richard.backend.restapi;
 
-import com.google.gson.GsonBuilder;
-
 public class MyRespone {
 	public static final String STATUS_Success		= "Success";
 	public static final String STATUS_Suspend		= "Suspend";
@@ -59,7 +57,4 @@ public class MyRespone {
 		return this;
 	}
 
-	public String toPrettyString() {
-		return new GsonBuilder().setPrettyPrinting().create().toJson(this);
-	}
 }
