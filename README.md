@@ -4,7 +4,7 @@ Backend là tất cả những phần hỗ trợ hoạt động của game,ứng
 - Database
 - Ứng dụng server (Server core)
 
-## Các công nghệ xây dựng Backend (sắp xếp theo số lượng tin tuyển dụng trên các trang việc làm)
+## Các công nghệ xây dựng Backend 
 - Java
 - C#
 - NodeJS
@@ -14,4 +14,5 @@ Backend là tất cả những phần hỗ trợ hoạt động của game,ứng
 - Rust
 - PHP
 
+(sắp xếp theo số lượng tin tuyển dụng trên các trang việc làm)
 ### Bài biết này sử dụng ngôn ngữ `java`. Sử dụng Framework `Springboot`. Sử dụng `swagger` để làm document
