@@ -167,10 +167,46 @@ Test với `Post Man` (Start server trước khi test)
 
 
 ## Cách viết document cho `springboot`
-#### Step 1 : lựa chọn phiên bản phù hợp giữa `springboot` và `swagger` (`springboot 2.5.14` + `swagger 2.9.2`)
-
+(bài viết này sử dụng `springboot 2.5.14` + `swagger 2.9.2`)
+#### Step 1 : lựa chọn phiên bản phù hợp giữa `springboot` và `swagger` 
+#### Step 2 : Thêm `swagger` vào dự án :
+ - Khai báo sử dụng thư viện `swagger` trong file pom.xml
+ - Tạo class Config : `Swagger2Config`
 
 ```sh
+@Component
+@Configuration
+@EnableSwagger2
+public class Swagger2Config {
+	@Bean
+	public Docket api() {
+		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.any()).paths(PathSelectors.any()).build();
+	}
+}
+```
+
+```sh
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.14</version>
+		<relativePath />
+	</parent>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
@@ -181,6 +217,15 @@ Test với `Post Man` (Start server trước khi test)
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
 		</dependency>
-```
+	</dependencies>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+```
 
