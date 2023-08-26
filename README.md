@@ -49,9 +49,10 @@ public class ControllerF {
 }
 ```
 
-### Cách tạo project `Springboot` theo chuẩn : [Springboot](https://spring.io/) → `Projects` → `Spring Initializr`
-- Truy cập trang chủ `[Springboot](https://spring.io/)`
-- 
+### Cách tạo project `Springboot` theo chuẩn : [spring.io](https://start.spring.io/) → `Projects` → `Spring Initializr`
+- `Project` : Maven
+- `Language` : Java
+- `Java` : 8 (Bản ổn định nhất trước khi Microsoft mua lại → các thế hệ 8x,9x thường dùng)
 
 
 ## Cách viết document cho `springboot`
