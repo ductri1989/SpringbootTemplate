@@ -17,8 +17,18 @@ Backend là tất cả những phần hỗ trợ hoạt động của game,ứng
 (sắp xếp theo số lượng tin tuyển dụng trên các trang việc làm)
 
 
+
+Bài biết này sử dụng ngôn ngữ `java` phiên bản `1.8` dùng Framework `Springboot`và  lấy `swagger` làm document
+## Cài đặt [Java Jdk](https://www.oracle.com/ph/java/technologies/downloads/)
+(roll xuống chọn Java 8 → đây là phiên bản ổn định nhất của Java sau khi Microsoft mua lại. Các thế hệ 8x,9x thường dùng)
+ - Cài đặt [Java Jdk](https://www.oracle.com/ph/java/technologies/downloads/)
+
+
+
+
+
 ## Cách hiểu đơn giản về springboot
-Bài biết này sử dụng ngôn ngữ `java` dùng Framework `Springboot`và  lấy `swagger` làm document
+
 - `Class Server`
     - `@SpringBootApplication` : đánh dấu server bắt đầu từ `package name` này, tất cả các `Controller` nằm trong `package name` này sẽ chạy bởi server này
     - `SpringApplication.run` : Star server
