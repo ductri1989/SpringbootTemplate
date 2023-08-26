@@ -37,8 +37,7 @@ public class RichardTemplateApplication {
 		SpringApplication.run(RichardTemplateApplication.class, args);
 	}
 }
-```
-```sh
+
 @RestController
 @RequestMapping(path = "/api")
 public class ControllerF {
@@ -49,7 +48,7 @@ public class ControllerF {
 }
 ```
 
-### Cách tạo project `Springboot` theo chuẩn : [spring.io](https://start.spring.io/) → `Projects` → `Spring Initializr`
+## Cách tạo project `Springboot` theo chuẩn : [spring.io](https://start.spring.io/) → `Projects` → `Spring Initializr`
 - `Project` : Maven
 - `Language` : Java
 - `Java` : 8 (Bản ổn định nhất trước khi Microsoft mua lại → các thế hệ 8x,9x thường dùng)
@@ -58,5 +57,17 @@ public class ControllerF {
 ## Cách viết document cho `springboot`
 
 
+```sh
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+```
 
 
