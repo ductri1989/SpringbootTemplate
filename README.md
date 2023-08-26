@@ -56,6 +56,7 @@ public class ControllerF {
 	- Spring Web Services : dùng cho RestAPI
 	- Thymeleaf : dùng để hiển thị Front-end HTML
  	- Spring Boot DevTools : tự động chạy lại server mỗi khi sửa code
+	- Validation : Dùng cho việc validate param (không null, số dương, chuỗi không rỗng,...)
 
 
 ## Cách viết document cho `springboot`
