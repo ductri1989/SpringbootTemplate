@@ -28,6 +28,7 @@ Bài biết này sử dụng ngôn ngữ `java` dùng Framework `Springboot`và 
         - value = "aaaa" : kết hợp với path đầu của controller sẽ ra url của API
         - produces = MediaType.APPLICATION_JSON_VALUE : sử dụng giao thức post với cấu trúc là Json
         - `@RequestBody CLASS` : các properties trong `CLASS` trở thành params của API
+        - Giá trị trả về của method : tự chuyển thành Json của giao thức `POST`
 ```sh
 @SpringBootApplication
 public class RichardTemplateApplication {
