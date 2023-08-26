@@ -48,7 +48,7 @@ public class ControllerF {
 }
 ```
 
-## Tạo project `Springboot` chuẩn : [spring.io](https://start.spring.io/) → `Projects` → `Spring Initializr`
+## Tạo project `Springboot` cơ bản : [spring.io](https://start.spring.io/) → `Projects` → `Spring Initializr`
 - `Project` : Maven
 - `Language` : Java
 - `Java` : 8 (Bản ổn định nhất trước khi Microsoft mua lại → các thế hệ 8x,9x thường dùng)
