@@ -75,8 +75,8 @@ Bài biết này sử dụng ngôn ngữ `java` phiên bản `1.8` dùng Framewo
 ```
 
 ## Phát triển dự án `Springboot`
-#### Step 1 : Tạo `package` : pkChuaApi
-#### Step 2 : Tạo `Class` : MyServer
+### Step 1 : Tạo `package` : pkChuaApi
+### Step 2 : Tạo `Class` : MyServer
 ```sh
 @SpringBootApplication
 public class MyServer {
@@ -89,7 +89,7 @@ public class MyServer {
 ```
  - `@SpringBootApplication` : đánh dấu đây là server + các api sẽ nằm trong `package` chứa `Class` MyServer
  - `SpringApplication.run` : Star server
-#### Step 3 : viết api cho Server
+### Step 3 : viết api cho Server
 
 
 
