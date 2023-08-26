@@ -24,9 +24,10 @@ Bài biết này sử dụng ngôn ngữ `java` dùng Framework `Springboot`và 
 - Các API phải là con của package `Class Server` (xem class : ControllerF)
     - `@RestController` : đánh dấu đây là Rest api
     - `@RequestMapping(path = "/api")` : khai báo path đầu của controller
-    - `@PostMapping(value = "aaaa", produces = MediaType.APPLICATION_JSON_VALUE)` : đánh dấu đây là giao thức POST
+    - `@PostMapping(value = "aaaa", produces = MediaType.APPLICATION_JSON_VALUE)` : đánh dấu giao thức POST cho bất kỳ method
         - value = "aaaa" : kết hợp với path đầu của controller sẽ ra url của API
         - produces = MediaType.APPLICATION_JSON_VALUE : sử dụng giao thức post với cấu trúc là Json
+        - `@RequestBody CLASS` : các properties trong `CLASS` trở thành params của API
 ```sh
 @SpringBootApplication
 public class RichardTemplateApplication {
@@ -40,7 +41,7 @@ public class RichardTemplateApplication {
 @RequestMapping(path = "/api")
 public class ControllerF {
 	@PostMapping(value = "aaaa", produces = MediaType.APPLICATION_JSON_VALUE)
-	public MyRespone login(@Valid @RequestBody Service001_AAA service) {
+	public MyRespone login(@RequestBody Service001_AAA service) {
 		return service.respone();
 	}
 }
