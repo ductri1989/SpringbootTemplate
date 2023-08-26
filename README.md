@@ -53,8 +53,8 @@ public class ControllerF {
 - `Language` : Java
 - `Java` : 8 (Bản ổn định nhất trước khi Microsoft mua lại → các thế hệ 8x,9x thường dùng)
 - `Dependencies`
- - Spring Web Services : dùng cho RestAPI
- - Thymeleaf : dùng để hiển thị code HTML
+	- Spring Web Services : dùng cho RestAPI
+	- Thymeleaf : dùng để hiển thị code HTML
 
 
 ## Cách viết document cho `springboot`
