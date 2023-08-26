@@ -17,7 +17,7 @@ Backend là tất cả những phần hỗ trợ hoạt động của game,ứng
 (sắp xếp theo số lượng tin tuyển dụng trên các trang việc làm)
 
 Bài biết này sử dụng ngôn ngữ `java` dùng Framework `Springboot`và  lấy `swagger` làm document
-#### Cách hiểu đơn giản về springboot
+## Cách hiểu đơn giản về springboot
 - `Class Server`
     - Đánh dấu đây là server : `@SpringBootApplication`
     - Star server : `SpringApplication.run(RichardTemplateApplication.class, args);`
