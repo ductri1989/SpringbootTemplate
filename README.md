@@ -158,7 +158,17 @@ public class Service1 {
 }
 ```
 
-
+Test với `Post Man`
+ - Đổi giao thức `GET` sang `POST`
+ - Điền URL : http://localhost:8080/api/post2
+ - `Body` → `raw` → đổi `Text` thành `JSON`
+```sh
+{
+    "name": "aaaaa",
+    "sex": 1,
+    "age": 400
+}
+```
 
 
 
