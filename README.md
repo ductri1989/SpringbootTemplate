@@ -20,9 +20,9 @@ Backend là tất cả những phần hỗ trợ hoạt động của game,ứng
 ## Cách hiểu đơn giản về springboot
 Bài biết này sử dụng ngôn ngữ `java` dùng Framework `Springboot`và  lấy `swagger` làm document
 - `Class Server`
-    - Đánh dấu đây là server : `@SpringBootApplication`
-    - Star server : `SpringApplication.run(RichardTemplateApplication.class, args);`
-- Các API phải là con của package `Class Server` (xem class : ControllerF)
+    - `@SpringBootApplication` : đánh dấu server bắt đầu từ `package name` này, tất cả các `Controller` nằm trong `package name` này sẽ chạy bởi server này
+    - `SpringApplication.run` : Star server
+- Các `Controller` của `Server` này phải là con của package `Class Server`
     - `@RestController` : đánh dấu đây là Rest api
     - `@RequestMapping(path = "/api")` : khai báo path đầu của controller
     - `@PostMapping(value = "aaaa", produces = MediaType.APPLICATION_JSON_VALUE)` : đánh dấu giao thức POST cho bất kỳ method
