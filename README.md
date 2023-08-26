@@ -100,17 +100,6 @@ public class MyServer {
         - produces = MediaType.APPLICATION_JSON_VALUE : sử dụng giao thức post với cấu trúc là Json
         - `@RequestBody Service1` : các properties trong `Service1` trở thành params của API
         - Giá trị trả về của method : tự chuyển thành Json của giao thức `POST`
-
-```sh
-@SpringBootApplication
-public class MyServer {
-
-	public static void main(String[] args) {
-		SpringApplication.run(MyServer.class, args);
-	}
-
-}
-```
 ```sh
 @RestController
 @RequestMapping(path = "/api")
