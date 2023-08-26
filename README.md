@@ -94,50 +94,67 @@ public class MyServer {
  - Tạo `Class` : MyController 
     - `@RestController` : đánh dấu đây là Rest api
     - `@RequestMapping(path = "/api")` : khai báo path đầu của controller
-    - `@PostMapping(value = "aaaa", produces = MediaType.APPLICATION_JSON_VALUE)` : đánh dấu giao thức POST cho bất kỳ method
-        - value = "aaaa" : kết hợp với path đầu của controller sẽ ra url của API (/api/aaaa)
+    - `@GetMapping(value = "get")` : đánh dấu giao thức GET (Test với trình duyệt [url](http://localhost:8080/api/get) )
+    - `@PostMapping(value = "post2", produces = MediaType.APPLICATION_JSON_VALUE)` : đánh dấu giao thức POST cho bất kỳ method (Test với [Post Man](https://www.postman.com/downloads/))
+        - value = "post2" : kết hợp với path đầu của controller sẽ ra url của API (/api/post2)
         - produces = MediaType.APPLICATION_JSON_VALUE : sử dụng giao thức post với cấu trúc là Json
-        - `@RequestBody CLASS` : các properties trong `CLASS` trở thành params của API
+        - `@RequestBody Service1` : các properties trong `Service1` trở thành params của API
         - Giá trị trả về của method : tự chuyển thành Json của giao thức `POST`
 
-
-
-
-
-
-
-
-
-
-
-## Cách hiểu đơn giản về springboot
-
-- `Class Server`
-    - `@SpringBootApplication` : đánh dấu server bắt đầu từ `package name` này, tất cả các `Controller` nằm trong `package name` này sẽ chạy bởi server này
-    - `SpringApplication.run` : Star server
-- Các `Controller` của `Server` này phải là con của package `Class Server`
-    - `@RestController` : đánh dấu đây là Rest api
-    - `@RequestMapping(path = "/api")` : khai báo path đầu của controller
-    - `@PostMapping(value = "aaaa", produces = MediaType.APPLICATION_JSON_VALUE)` : đánh dấu giao thức POST cho bất kỳ method
-        - value = "aaaa" : kết hợp với path đầu của controller sẽ ra url của API (/api/aaaa)
-        - produces = MediaType.APPLICATION_JSON_VALUE : sử dụng giao thức post với cấu trúc là Json
-        - `@RequestBody CLASS` : các properties trong `CLASS` trở thành params của API
-        - Giá trị trả về của method : tự chuyển thành Json của giao thức `POST`
 ```sh
 @SpringBootApplication
-public class RichardTemplateApplication {
-	public static void main(String[] args) {
-		SpringApplication.run(RichardTemplateApplication.class, args);
-	}
-}
+public class MyServer {
 
+	public static void main(String[] args) {
+		SpringApplication.run(MyServer.class, args);
+	}
+
+}
+```
+```sh
 @RestController
 @RequestMapping(path = "/api")
-public class ControllerF {
-	@PostMapping(value = "aaaa", produces = MediaType.APPLICATION_JSON_VALUE)
-	public MyRespone login(@RequestBody Service001_AAA service) {
+public class MyController {
+
+	@GetMapping(value = "get")
+	public String demoGet() {
+		return "aaaaaaa";
+	}
+	
+	@PostMapping(value = "post1")
+	public MyData demoPost1() {
+		return new MyData("Richard",(byte) 1,34);
+	}
+	
+	@PostMapping(value = "post2", produces = MediaType.APPLICATION_JSON_VALUE)
+	public Object demoPost2(@RequestBody Service1 service) {
 		return service.respone();
 	}
+}
+```
+```sh
+public class MyData {
+	public String name;
+	protected int age;
+	private byte sex;
+	
+	public MyData(String _name,byte _sex,int _age) {
+		name=_name;
+		sex=_sex;
+		age=_age;
+	}
+}
+```
+```sh
+public class Service1 {
+	public String name;
+	public byte sex;
+	public int age;
+	
+	public Object respone() {
+		return new MyData(name, sex, age);
+	}
+	
 }
 ```
 
