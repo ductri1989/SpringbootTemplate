@@ -19,11 +19,26 @@ Backend là tất cả những phần hỗ trợ hoạt động của game,ứng
 
 
 Bài biết này sử dụng ngôn ngữ `java` phiên bản `1.8` dùng Framework `Springboot`và  lấy `swagger` làm document
-## Cài đặt [Java Jdk](https://www.oracle.com/ph/java/technologies/downloads/)
-(roll xuống chọn Java 8 → đây là phiên bản ổn định nhất của Java sau khi Microsoft mua lại. Các thế hệ 8x,9x thường dùng)
- - Cài đặt [Java Jdk](https://www.oracle.com/ph/java/technologies/downloads/)
+## Setup môi trường lập trình
+ - Cài đặt [Java Jdk](https://www.oracle.com/ph/java/technologies/downloads/) : roll xuống chọn Java 8 (Bản ổn định nhất trước khi Microsoft mua lại → các thế hệ 8x,9x thường dùng)
+ - IDE : có nhiều ide để lập trình java
+	- [Eclipse](https://www.eclipse.org/downloads/) : tác giả quen sử dụng ide này
+	- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+	- ...
 
+## Tạo project `Springboot` cơ bản : [spring.io](https://start.spring.io/) → `Projects` → `Spring Initializr`
+(mục đích : cần file pom.xml chuẩn để lấy `dependency`)
+ - `Project` : Maven
+ - `Language` : Java
+ - `Java` : 8 (Bản ổn định nhất trước khi Microsoft mua lại → các thế hệ 8x,9x thường dùng)
+ - `Dependencies` : chọn `Spring Web Services` để dùng cho RestAPI
 
+## Đưa project vào Eclipse
+(Chú ý thanh loading ở góc phải dưới của Eclipse load lần đầu của thư viện khá lâu)
+ - Cách 1 : `File` → `Import` → `Maven` → `Existing Maven Projects` : Browse đến thư mục springboot đã tạo từ web
+ - Cách 2 : `File` → `New` → `Maven project` → check `Create a simple project (skip archetype selection)`
+	- Group Id : Tên tổ chức / công ty / cá nhân của dự án
+	- Artifact Id : Tên của packge, dự án
 
 
 
@@ -58,15 +73,13 @@ public class ControllerF {
 }
 ```
 
-## Tạo project `Springboot` cơ bản : [spring.io](https://start.spring.io/) → `Projects` → `Spring Initializr`
-- `Project` : Maven
-- `Language` : Java
-- `Java` : 8 (Bản ổn định nhất trước khi Microsoft mua lại → các thế hệ 8x,9x thường dùng)
-- `Dependencies`
-	- Spring Web Services : dùng cho RestAPI
-	- Thymeleaf : dùng để hiển thị Front-end HTML
- 	- Spring Boot DevTools : tự động chạy lại server mỗi khi sửa code
-	- Validation : Dùng cho việc validate param (không null, số dương, chuỗi không rỗng,...)
+
+
+
+
+
+
+
 
 
 ## Cách viết document cho `springboot`
