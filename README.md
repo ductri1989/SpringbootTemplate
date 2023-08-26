@@ -28,7 +28,7 @@ Bài biết này sử dụng ngôn ngữ `java` phiên bản `1.8` dùng Framewo
 	- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 	- ...
 
-## Tạo project `Springboot` cơ bản : [spring.io](https://start.spring.io/) → `Projects` → `Spring Initializr`
+## Tạo project `Springboot` : [spring.io](https://start.spring.io/) → `Projects` → `Spring Initializr`
 (mục đích : cần file pom.xml chuẩn để lấy `dependency`)
  - `Project` : Maven
  - `Language` : Java
