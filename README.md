@@ -167,6 +167,7 @@ Test với `Post Man` (Start server trước khi test)
 
 
 ## Cách viết document cho `springboot`
+#### Step 1 : lựa chọn phiên bản phù hợp giữa `springboot` và `swagger` (`springboot 2.5.14` + `swagger 2.9.2`)
 
 
 ```sh
