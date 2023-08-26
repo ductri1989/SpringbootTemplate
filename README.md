@@ -18,7 +18,9 @@ Backend là tất cả những phần hỗ trợ hoạt động của game,ứng
 
 
 
-Bài biết này sử dụng ngôn ngữ `java` phiên bản `1.8` dùng Framework `Springboot`và  lấy `swagger` làm document
+Bài biết này sử dụng ngôn ngữ `java` phiên bản `1.8` dùng Framework `Springboot` và  lấy `swagger` làm document
+(Kiểm tra phiên bản java đã cài trong máy : java -version)
+
 ## Setup môi trường lập trình
  - Cài đặt [Java Jdk](https://www.oracle.com/ph/java/technologies/downloads/) : roll xuống chọn Java 8 (Bản ổn định nhất trước khi Microsoft mua lại → các thế hệ 8x,9x thường dùng)
  - IDE : có nhiều ide để lập trình java
@@ -71,6 +73,29 @@ Bài biết này sử dụng ngôn ngữ `java` phiên bản `1.8` dùng Framewo
 		</plugins>
 	</build>
 ```
+
+## Phát triển dự án `Springboot`
+
+Tạo `package` : pkChuaApi
+
+Tạo `Class` : MyServer
+
+```sh
+@SpringBootApplication
+public class MyServer {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MyServer.class, args);
+	}
+
+}
+```
+ - `@SpringBootApplication` : đánh dấu đây là server + các api sẽ nằm trong `package` chứa `Class` MyServer
+ - `SpringApplication.run` : Star server
+
+
+
+
 
 
 
