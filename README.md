@@ -49,7 +49,7 @@ public class ControllerF {
 }
 ```
 
-### Cách tạo project `Springboot` theo chuẩn : truy cập trang chủ `[Springboot](https://spring.io/)` → `Projects` → `Spring Initializr`
+### Cách tạo project `Springboot` theo chuẩn : [Springboot](https://spring.io/) → `Projects` → `Spring Initializr`
 - Truy cập trang chủ `[Springboot](https://spring.io/)`
 - 
 
