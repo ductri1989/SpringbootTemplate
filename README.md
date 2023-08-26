@@ -75,8 +75,10 @@ Bài biết này sử dụng ngôn ngữ `java` phiên bản `1.8` dùng Framewo
 ```
 
 ## Phát triển dự án `Springboot`
-### Step 1 : Tạo `package` : pkChuaApi
-### Step 2 : Tạo `Class` : MyServer
+#### Step 1 : Tạo `package` : pkChuaApi
+#### Step 2 : Tạo `Class` : MyServer
+ - `@SpringBootApplication` : đánh dấu đây là server + các api sẽ nằm trong `package` chứa `Class` MyServer
+ - `SpringApplication.run` : Star server
 ```sh
 @SpringBootApplication
 public class MyServer {
@@ -87,9 +89,17 @@ public class MyServer {
 
 }
 ```
- - `@SpringBootApplication` : đánh dấu đây là server + các api sẽ nằm trong `package` chứa `Class` MyServer
- - `SpringApplication.run` : Star server
-### Step 3 : viết api cho Server
+#### Step 3 : viết api cho Server
+ - Tạo `package` : `pkChuaApi.rest` (api luôn luôn là con của `pkChuaApi`)
+ - Tạo `Class` : MyController 
+    - `@RestController` : đánh dấu đây là Rest api
+    - `@RequestMapping(path = "/api")` : khai báo path đầu của controller
+    - `@PostMapping(value = "aaaa", produces = MediaType.APPLICATION_JSON_VALUE)` : đánh dấu giao thức POST cho bất kỳ method
+        - value = "aaaa" : kết hợp với path đầu của controller sẽ ra url của API (/api/aaaa)
+        - produces = MediaType.APPLICATION_JSON_VALUE : sử dụng giao thức post với cấu trúc là Json
+        - `@RequestBody CLASS` : các properties trong `CLASS` trở thành params của API
+        - Giá trị trả về của method : tự chuyển thành Json của giao thức `POST`
+
 
 
 
