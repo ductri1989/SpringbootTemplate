@@ -172,6 +172,7 @@ Test với `Post Man` (Start server trước khi test)
 #### Step 2 : Thêm `swagger` vào dự án :
  - Khai báo sử dụng thư viện `swagger` trong file pom.xml
  - Tạo class Config : `Swagger2Config`
+ - Thêm mô tả cho document `@ApiOperation("Đây là title hiển thị trên Swagger")` phía trên `@PostMapping`
 
 ```sh
 @Component
