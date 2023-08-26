@@ -26,7 +26,7 @@ Bài biết này sử dụng ngôn ngữ `java` dùng Framework `Springboot`và 
     - `@RestController` : đánh dấu đây là Rest api
     - `@RequestMapping(path = "/api")` : khai báo path đầu của controller
     - `@PostMapping(value = "aaaa", produces = MediaType.APPLICATION_JSON_VALUE)` : đánh dấu giao thức POST cho bất kỳ method
-        - value = "aaaa" : kết hợp với path đầu của controller sẽ ra url của API
+        - value = "aaaa" : kết hợp với path đầu của controller sẽ ra url của API (/api/aaaa)
         - produces = MediaType.APPLICATION_JSON_VALUE : sử dụng giao thức post với cấu trúc là Json
         - `@RequestBody CLASS` : các properties trong `CLASS` trở thành params của API
         - Giá trị trả về của method : tự chuyển thành Json của giao thức `POST`
