@@ -39,6 +39,41 @@ Bài biết này sử dụng ngôn ngữ `java` phiên bản `1.8` dùng Framewo
  - Cách 2 : `File` → `New` → `Maven project` → check `Create a simple project (skip archetype selection)`
 	- Group Id : Tên tổ chức / công ty / cá nhân của dự án
 	- Artifact Id : Tên của packge, dự án
+	- Sau khi tạo project thì copy 3 phần này trong file pom đã tải từ trang chủ `Springboot`
+```sh
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.1.3</version>
+		<relativePath/>
+	</parent>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+```
+
+
+
 
 
 
