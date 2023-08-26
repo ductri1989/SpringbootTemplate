@@ -158,7 +158,7 @@ public class Service1 {
 }
 ```
 
-Test với `Post Man`
+Test với `Post Man` (Start server trước khi test)
  - Đổi giao thức `GET` sang `POST`
  - Điền URL : http://localhost:8080/api/post2
  - `Body` → `raw` → đổi `Text` thành `JSON`
