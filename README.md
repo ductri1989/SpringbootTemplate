@@ -166,7 +166,7 @@ Test với `Post Man` (Start server trước khi test)
 
 
 
-## Cách viết document cho `springboot`
+## Sử dụng document cho `springboot`
 (bài viết này sử dụng `springboot 2.5.14` + `swagger 2.9.2`)
 #### Step 1 : lựa chọn phiên bản phù hợp giữa `springboot` và `swagger` 
 #### Step 2 : Thêm `swagger` vào dự án :
@@ -229,4 +229,4 @@ public class Swagger2Config {
 		</plugins>
 	</build>
 ```
-
+#### Step 3 : truy cập [document](http://localhost:8080/swagger-ui.html) sau khi start Server
