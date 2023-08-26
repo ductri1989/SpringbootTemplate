@@ -54,7 +54,8 @@ public class ControllerF {
 - `Java` : 8 (Bản ổn định nhất trước khi Microsoft mua lại → các thế hệ 8x,9x thường dùng)
 - `Dependencies`
 	- Spring Web Services : dùng cho RestAPI
-	- Thymeleaf : dùng để hiển thị code HTML
+	- Thymeleaf : dùng để hiển thị Front-end HTML
+ 	- Spring Boot DevTools : tự động chạy lại server mỗi khi sửa code
 
 
 ## Cách viết document cho `springboot`
