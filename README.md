@@ -28,6 +28,11 @@ Bài biết này sử dụng ngôn ngữ `java` phiên bản `1.8` dùng Framewo
 	- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 	- ...
 
+### Cấu hình Eclipse cho Macos : `Eclipse` → `Preferences` → expand thẻ `Java`
+ - `Compiler` : đổi sang 1.8
+ - `Installed JREs` : chọn đúng đường dẫn java đã cài (nếu chưa có thì `Add`)
+ - `Installed JREs` → `Execution Environments` : chọn 1.8
+
 ## Tạo project `Springboot` : [spring.io](https://start.spring.io/) → `Projects` → `Spring Initializr`
 (mục đích : cần file pom.xml chuẩn để lấy `dependency`)
  - `Project` : Maven
